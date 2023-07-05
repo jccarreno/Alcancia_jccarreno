@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D507175-94C1-412F-939A-F93B6761961A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>appAlcancia.Presentacion.IGU</RootNamespace>
+    <AssemblyName>appAlcancia</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>appAlcancia.Presentacion.IGU.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+      <CustomToolNamespace>appAlcancia.Presentacion.IGU</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdministrador.cs">
+      <SubType>Form</SubType>
+      <CustomToolNamespace>appAlcancia.Presentacion.IGU</CustomToolNamespace>
+    </Compile>
+    <Compile Include="frmAdministrador.Designer.cs">
+      <DependentUpon>frmAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarAhorrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarAhorrador.Designer.cs">
+      <DependentUpon>frmAgregarAhorrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarDivisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarDivisa.Designer.cs">
+      <DependentUpon>frmAgregarDivisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrearAlcancia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearAlcancia.Designer.cs">
+      <DependentUpon>frmCrearAlcancia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDenominaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDenominaciones.Designer.cs">
+      <DependentUpon>frmDenominaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarAhorrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarAhorrador.Designer.cs">
+      <DependentUpon>frmEditarAhorrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarBillete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarBillete.Designer.cs">
+      <DependentUpon>frmEditarBillete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarDivisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarDivisa.Designer.cs">
+      <DependentUpon>frmEditarDivisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarMoneda.Designer.cs">
+      <DependentUpon>frmEditarMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarAhorrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarAhorrador.Designer.cs">
+      <DependentUpon>frmEliminarAhorrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarBillete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarBillete.Designer.cs">
+      <DependentUpon>frmEliminarBillete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarDivisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarDivisa.Designer.cs">
+      <DependentUpon>frmEliminarDivisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarMoneda.Designer.cs">
+      <DependentUpon>frmEliminarMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecibirIDMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecibirIDMoneda.Designer.cs">
+      <DependentUpon>frmRecibirIDMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecibirSerialBillete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecibirSerialBillete.Designer.cs">
+      <DependentUpon>frmRecibirSerialBillete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarAdmin.Designer.cs">
+      <DependentUpon>frmRegistrarAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarBillete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarBillete.Designer.cs">
+      <DependentUpon>frmRegistrarBillete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarMoneda.Designer.cs">
+      <DependentUpon>frmRegistrarMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdministrador.resx">
+      <DependentUpon>frmAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarAhorrador.resx">
+      <DependentUpon>frmAgregarAhorrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarDivisa.resx">
+      <DependentUpon>frmAgregarDivisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearAlcancia.resx">
+      <DependentUpon>frmCrearAlcancia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDenominaciones.resx">
+      <DependentUpon>frmDenominaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarAhorrador.resx">
+      <DependentUpon>frmEditarAhorrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarBillete.resx">
+      <DependentUpon>frmEditarBillete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarDivisa.resx">
+      <DependentUpon>frmEditarDivisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarMoneda.resx">
+      <DependentUpon>frmEditarMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarAhorrador.resx">
+      <DependentUpon>frmEliminarAhorrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarBillete.resx">
+      <DependentUpon>frmEliminarBillete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarDivisa.resx">
+      <DependentUpon>frmEliminarDivisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarMoneda.resx">
+      <DependentUpon>frmEliminarMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecibirIDMoneda.resx">
+      <DependentUpon>frmRecibirIDMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecibirSerialBillete.resx">
+      <DependentUpon>frmRecibirSerialBillete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarAdmin.resx">
+      <DependentUpon>frmRegistrarAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarBillete.resx">
+      <DependentUpon>frmRegistrarBillete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarMoneda.resx">
+      <DependentUpon>frmRegistrarMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libAlcancia\libAlcancia.csproj">
+      <Project>{b18135e5-d6a6-43a4-955a-a246de10e45a}</Project>
+      <Name>libAlcancia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libServicios\libServicios.csproj">
+      <Project>{8592bb6e-b371-4a64-b50a-9d593ea425a6}</Project>
+      <Name>libServicios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
